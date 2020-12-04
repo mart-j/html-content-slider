@@ -2,6 +2,10 @@
 
 HTML Content Slider is a React application created without any third-party libraries. Only core react libraries are used.
 
+## Live DEMO
+
+[Github Pages link](https://mart-j.github.io/html-content-slider/)
+
 ## Installation
 
 open a terminal on your desktop and run the command

@@ -137,8 +137,7 @@ const Slider = () => {
                   display: 'flex',
                   flexDirection: 'column',
                   textAlign: 'center',
-                  backgroundColor: 'khaki',
-                  border: '1px solid red',
+                  background: 'linear-gradient(to right, rgb(240, 5, 5), rgb(239, 239, 11))',
                 }}
               >
                 <h1>{item.name}</h1>

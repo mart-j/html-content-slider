@@ -1,109 +1,108 @@
 .slider-wrapper {
-    display: flex;
-    align-items: center;
-    width: 100%;
+  padding-top: 50px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.slider--visible-content-window {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+}
+
+.slider {
+  width: 100%;
+  user-select: none;
+  position: absolute;
+  cursor: grabbing;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider--prev-content {
+  left: 100%;
+}
+
+.slider--next-content {
+  left: -100%;
+}
+
+.left-arrow,
+.right-arrow {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  border-top: 7px solid rgb(0, 162, 255);
+  border-left: 7px solid rgb(0, 162, 255);
+  margin: 10px;
+  transform: rotate(135deg);
+  transition: border-color 0.3s;
+}
+.left-arrow {
+  transform: rotate(315deg);
+}
+
+.left-arrow:hover,
+.right-arrow:hover {
+  border-color: rgb(156, 219, 255);
+}
+
+.slider--center-move-right {
+  animation-name: center-move-right;
+  animation-duration: 0.3s;
+}
+
+@keyframes center-move-right {
+  0% {
+    left: 0;
   }
-  
-  .slider--visible-content-window {
-    position: relative;
-    display: flex;
-    overflow: hidden;
-    width: 100%;
-  }
-  
-  .slider {
-    width: 100%;
-    user-select: none;
-    position: absolute;
-    cursor: grabbing;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  
-  }
-  
-  .slider--prev-content {
-    left: 100%;
-  }
-  
-  .slider--next-content {
+  100% {
     left: -100%;
   }
-  
-  .left-arrow,
-  .right-arrow {
-    border: none;
-    outline: none;
-    background-color: transparent;
-    cursor: pointer;
-    width: 30px;
-    height: 30px;
-    border-top: 7px solid rgb(0, 162, 255);
-    border-left: 7px solid rgb(0, 162, 255);
-    margin: 10px;
-    transform: rotate(135deg);
-    transition: border-color 0.3s;
+}
+
+.slider--center-move-left {
+  animation-name: center-move-left;
+  animation-duration: 0.3s;
+}
+@keyframes center-move-left {
+  0% {
+    left: 0;
   }
-  .left-arrow {
-    transform: rotate(315deg);
+  100% {
+    left: 100%;
   }
-  
-  .left-arrow:hover,
-  .right-arrow:hover {
-    border-color: rgb(156, 219, 255);
+}
+
+.slider--right-animation {
+  animation-name: right-animation;
+  animation-duration: 0.3s;
+}
+
+@keyframes right-animation {
+  0% {
+    left: 100%;
   }
-  
-  .slider--center-move-right {
-    animation-name: center-move-right;
-    animation-duration: 0.3s;
+  100% {
+    left: 0%;
   }
-  
-  @keyframes center-move-right {
-    0% {
-      left: 0;
-    }
-    100% {
-      left: -100%;
-    }
+}
+
+.slider--left-animation {
+  animation-name: left-animation;
+  animation-duration: 0.3s;
+}
+@keyframes left-animation {
+  0% {
+    left: -100%;
   }
-  
-  .slider--center-move-left {
-    animation-name: center-move-left;
-    animation-duration: 0.3s;
+  100% {
+    left: 0%;
   }
-  @keyframes center-move-left {
-    0% {
-      left: 0;
-    }
-    100% {
-      left: 100%;
-    }
-  }
-  
-  .slider--right-animation {
-    animation-name: right-animation;
-    animation-duration: 0.3s;
-  }
-  
-  @keyframes right-animation {
-    0% {
-      left: 100%;
-    }
-    100% {
-      left: 0%;
-    }
-  }
-  
-  .slider--left-animation {
-    animation-name: left-animation;
-    animation-duration: 0.3s;
-  }
-  @keyframes left-animation {
-    0% {
-      left: -100%;
-    }
-    100% {
-      left: 0%;
-    }
-  }
-  
+}
