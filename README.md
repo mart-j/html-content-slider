@@ -36,7 +36,7 @@ And then assign, right below the Slider function assign sliderList to your list
 ```javascript
  const sliderList = myList;
 ```
-Inside the div with className 'slider--visible-content-window', you will man trough the slider array like in an example below
+Inside the div with className 'slider--visible-content-window', you will map trough the slider array like in an example below
 ```react
 <div
   style={{ height: `${boxHeight}px` }}
