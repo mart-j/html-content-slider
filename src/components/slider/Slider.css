@@ -1,3 +1,11 @@
+.dropBox {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background: aqua;
+  
+}
+
 .slider-wrapper {
   padding-top: 50px;
   display: flex;
@@ -55,7 +63,7 @@
 
 .slider--center-move-right {
   animation-name: center-move-right;
-  animation-duration: 0.3s;
+  animation-duration: 1s;
 }
 
 @keyframes center-move-right {
@@ -69,7 +77,7 @@
 
 .slider--center-move-left {
   animation-name: center-move-left;
-  animation-duration: 0.3s;
+  animation-duration: 1s;
 }
 @keyframes center-move-left {
   0% {
@@ -82,7 +90,7 @@
 
 .slider--right-animation {
   animation-name: right-animation;
-  animation-duration: 0.3s;
+  animation-duration: 1s;
 }
 
 @keyframes right-animation {
@@ -96,7 +104,7 @@
 
 .slider--left-animation {
   animation-name: left-animation;
-  animation-duration: 0.3s;
+  animation-duration: 1s;
 }
 @keyframes left-animation {
   0% {

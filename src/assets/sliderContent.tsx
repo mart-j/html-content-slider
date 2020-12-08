@@ -5,7 +5,7 @@ export const employeeList = [
     ocupation: 'Strādnieks',
   },
   {
-    name: 'Aigars',
+    name: 'Normunds',
     age: 20,
     ocupation: 'Students',
   },
@@ -15,7 +15,7 @@ export const employeeList = [
     ocupation: 'Darbinieks',
   },
   {
-    name: 'Sandris',
+    name: 'Pēteris',
     age: 33,
     ocupation: 'Traktorists',
   },
